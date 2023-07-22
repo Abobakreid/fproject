@@ -1,0 +1,58 @@
+.navComponent {
+  padding: 20px 0;
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  .container {
+    align-items: center;
+  }
+  .n_brand {
+    a {
+      display: block;
+    }
+    img {
+      display: inline-block;
+      height: 50px;
+      width: 180px;
+      object-fit: cover;
+      @media (max-width: 991px) {
+        height: 60px;
+        width: 160px;
+      }
+    }
+  }
+  .n_user {
+    color: white;
+    padding: 10px;
+    position: relative;
+    .userIcon {
+      cursor: pointer;
+    }
+    .sum_nav {
+      padding: 10px;
+      position: absolute;
+      bottom: auto;
+      width: 100px;
+      right: 0;
+      display: none;
+      a {
+        display: block;
+        background: #003d2d 0% 0% no-repeat padding-box;
+        text-align: center;
+        width: 100px;
+        padding: 8px;
+        color: #90ee90;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        margin-bottom: 8px;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        right: 62px;
+      }
+    }
+  }
+}

@@ -1,0 +1,245 @@
+@import url("https://fonts.cdnfonts.com/css/noize-sport-free-vertion");
+.rate_of_player {
+  background-color: #ecf5f2;
+  position: relative;
+  .playerhome_img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+    height: 230px;
+    z-index: 0;
+  }
+  .res_container {
+    position: relative;
+    z-index: 11;
+    min-height: calc(100vh - 80px);
+    margin-top: 80px;
+    color: #003d2d;
+    .row {
+      .rate_cont {
+        width: calc(100% - 280px);
+        padding: 40px;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        .finish {
+          text-align: right;
+          span {
+            display: inline-block;
+            background-color: #003d2d;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            padding: 8px 10px;
+            width: 150px;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+          }
+        }
+      }
+      .players {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 90px;
+        .card {
+          background-color: white;
+          padding: 15px;
+          width: 240px;
+          text-align: center;
+          h3 {
+            color: #53bc7d;
+            font: normal normal normal 22px/28px Noize Sport Free Vertion;
+          }
+          img {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+          }
+          .star-rating {
+            border-top: 1px solid #5005;
+            padding: 5px 0;
+          }
+        }
+      }
+      .total_rate {
+        width: 280px;
+        background-color: white;
+        padding: 0 10px;
+        padding-top: 10px;
+        @media (max-width: 991px) {
+          width: 100%;
+        }
+        .p_data {
+          padding-bottom: 20px;
+          border-bottom: 1px solid #eee;
+          .p_po {
+            display: inline-block;
+            padding: 5px 15px;
+            background-color: #03001b;
+            color: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+          .p_dat {
+            margin-top: 15px;
+            align-items: center;
+            .p_info {
+              width: 70%;
+              padding: 5px;
+              h3 {
+                margin: 0;
+              }
+              .p_em {
+                word-wrap: break-word;
+              }
+            }
+            .p_img {
+              img {
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+              }
+            }
+          }
+        }
+        .t_rate {
+          h2 {
+            font-style: italic;
+            margin: 0;
+            font-family: "Noize Sport Free Vertion", sans-serif;
+            font-size: 19px;
+          }
+          .s_rate {
+            .rates {
+              margin: 20px 0;
+              .r_p {
+                width: 38%;
+                padding: 5px;
+                margin-bottom: 5px;
+                background-color: rgb(237, 237, 237);
+                font: normal normal normal 13px/17px Gadugi;
+                span {
+                  display: block;
+                  padding-left: 8px;
+                  margin: 10px 0;
+                  margin-left: 10px;
+                  font-size: 15px;
+                  font-weight: bolder;
+                  font-style: italic;
+                  font-family: "Noize Sport Free Vertion", sans-serif;
+                }
+                &:first-of-type {
+                  span {
+                    border-left: 4px solid green;
+                  }
+                }
+                &:nth-of-type(2) {
+                  span {
+                    border-left: 4px solid green;
+                  }
+                }
+                &:nth-of-type(3) {
+                  span {
+                    border-left: 4px solid green;
+                  }
+                }
+                &:last-of-type {
+                  span {
+                    border-left: 4px solid green;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .rate_footer {
+          padding: 8px 0;
+          border-top: 1px solid #aaa;
+          a {
+            color: green;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* rate */
+.circular_container {
+  display: flex;
+  padding: 25px 0;
+  border-radius: 8px;
+  row-gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.circular-progress {
+  position: relative;
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: conic-gradient(#ffffff 3.6deg, #ffffff 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 15px #f4f4f9;
+}
+.circular-progress::before {
+  content: "";
+  position: absolute;
+  height: 165px;
+  width: 170px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 0 14px #eeeef6 inset;
+}
+.progress-value {
+  position: relative;
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  width: 125px;
+  height: 125px;
+  padding: 40px 0;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 1px dashed #cfcfcf;
+  font-family: "Noize Sport Free Vertion", sans-serif;
+}
+
+/* player rate*/
+.Load_container {
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bak {
+  width: 100%;
+  height: 10px;
+  background-color: rgb(237, 237, 237);
+  margin-right: 5px;
+}
+.line {
+  width: 50%;
+  height: 100%;
+  background-color: #78feb5;
+}

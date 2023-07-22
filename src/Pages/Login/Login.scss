@@ -1,0 +1,109 @@
+.login {
+  position: relative;
+  .login_img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+    height: 300px;
+    z-index: 5;
+  }
+
+  .l_form {
+    position: relative;
+    z-index: 1111;
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    .container {
+      display: flex;
+    }
+    .lo_form {
+      padding: 30px;
+      border-radius: 10px;
+      display: block;
+      width: 40%;
+      margin: auto;
+      margin-top: 100px;
+      background-color: white;
+      .l_title {
+        margin-bottom: 40px;
+        h2 {
+          margin: 0;
+          margin-bottom: 20px;
+        }
+      }
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+    a {
+      display: block;
+      text-align: center;
+      color: #003d2d;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    input,
+    button {
+      display: block;
+      padding: 10px 8px;
+      margin-bottom: 10px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      background-color: rgba(112, 112, 112, 0.05);
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 7px;
+    }
+    .l_input {
+      width: 100%;
+    }
+    .c_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0 10px;
+      margin-bottom: 10px;
+      .l_btn {
+        display: block;
+        padding: 13px 25px;
+        width: 100%;
+        cursor: pointer;
+        margin: 0;
+        color: #003d2d;
+      }
+    }
+    .log_back {
+      a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 5px;
+        color: #30da7d;
+      }
+    }
+    .radio_btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      input {
+        display: inline-block;
+        margin: 0;
+        margin-right: 2px;
+      }
+      label {
+        display: inline-block;
+        margin-right: 10px;
+        color: #003d2d;
+      }
+    }
+  }
+}

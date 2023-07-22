@@ -1,0 +1,228 @@
+body {
+  background-color: #f4fff0;
+  position: relative;
+}
+.owner_stadium_detail {
+  padding-top: 80px;
+  .reservations_r {
+    width: 70%;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  .filtration {
+    margin-top: 30px;
+    .reservations_i {
+      align-items: center;
+      .analysis {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #003d2d;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        cursor: pointer;
+        padding: 8px;
+        border: 1px solid #90ee90;
+      }
+      .oone {
+        a {
+          margin-right: 5px;
+        }
+      }
+    }
+    .filter {
+      display: block;
+      color: #003d2d;
+      margin-bottom: 10px;
+      font: normal normal normal 35px/40px Ara ES Nawar;
+    }
+    .dat {
+      padding: 6px 20px;
+    }
+  }
+  .qus {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    display: flex;
+    justify-content: center;
+    .qus_con {
+      position: relative;
+      top: 25%;
+      width: 300px;
+      height: 150px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
+      overflow: hidden;
+      &::after {
+        content: "";
+        position: relative;
+        right: -162px;
+        top: -89px;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #5fb85f;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+      }
+      span {
+        display: inline-block;
+        padding: 5px;
+        margin-right: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: #5fb85f;
+          color: white;
+        }
+      }
+    }
+  }
+  .reservation_row {
+    .stad {
+      margin-top: 30px;
+      background-color: #ffffff;
+      border: 1px solid #8b8b8b;
+      border-right: 10px solid #90ee90;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      &::before {
+        content: "";
+        width: 18px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 1px solid #8b8b8b;
+      }
+      // .detail {
+      //   padding: 50px 20px;
+      //   width: 30%;
+      //   text-align: center;
+      //   @media (max-width: 768px) {
+      //     width: 100%;
+      //     border-bottom: 1px solid #707070;
+      //   }
+      //   a {
+      //     color: #003d2d;
+      //     padding: 6px 40px;
+      //     border: 1px solid #707070;
+      //   }
+      // }
+      .data {
+        padding: 50px 20px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(80% / 3), 1fr));
+        gap: 40px;
+        align-items: center;
+        @media (max-width: 768px) {
+          width: 100%;
+          grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+        .reservation {
+          padding-top: 10px;
+          text-align: center;
+          span {
+            display: block;
+            margin-bottom: 6px;
+            color: #003d2d;
+          }
+          .Reserved {
+            border: 1px solid #90ee90;
+            display: inline-block;
+            padding: 8px;
+          }
+          .Reserved_owner {
+            cursor: pointer;
+          }
+        }
+        .teamOne,
+        .teamTwo {
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 69px;
+            height: 105px;
+            display: inline-block;
+            margin: 0 8px;
+          }
+          h3 {
+            margin: 0;
+            color: #003d2d;
+          }
+          .dash {
+            width: 40px;
+            height: 6px;
+            background-color: #003d2d;
+          }
+          &.teamOne {
+            img {
+              transform: rotateY(166deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// background-color: white;
+// padding: 10pxy;
+// .date_for {
+//   scroll-snap-align: start;
+//   text-align: center;
+//   .d_day {
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     width: 77px;
+//     height: 77px;
+//     background-color: white;
+//     border: 1px solid #003d2d;
+//     gap: 12px;
+//     cursor: pointer;
+//     &.active {
+//       background-color: #90ee90;
+//     }
+//     span {
+//       display: block;
+//       width: 100%;
+//       text-align: center;
+//       &:first-of-type {
+//         font: normal normal normal 24px/29px Ara ES Nawar;
+//       }
+//     }
+//     border-radius: 50%;
+//     -webkit-border-radius: 50%;
+//     -moz-border-radius: 50%;
+//     -ms-border-radius: 50%;
+//     -o-border-radius: 50%;
+//   }
+//   .day_of_week {
+//     display: inline-block;
+//     font: normal normal normal 18px/20px Ara ES Nawar;
+//   }
+// }

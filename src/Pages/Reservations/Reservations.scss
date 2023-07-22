@@ -1,0 +1,97 @@
+body {
+  background-color: #f4fff0;
+}
+.reservations {
+  padding-top: 80px;
+  .filtration {
+    margin-top: 30px;
+    .filter {
+      display: inline-block;
+      color: #003d2d;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 22px;
+    }
+    .dat {
+      padding: 6px 20px;
+    }
+  }
+  .reservation_row {
+    .stad {
+      margin-top: 30px;
+      background-color: #ffffff;
+      border: 1px solid #8b8b8b;
+      border-right: 5px solid #90ee90;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      .detail {
+        padding: 50px 20px;
+        width: 30%;
+        text-align: center;
+        @media (max-width: 768px) {
+          width: 100%;
+          border-bottom: 1px solid #707070;
+        }
+        a {
+          color: #003d2d;
+          padding: 6px 40px;
+          border: 1px solid #707070;
+        }
+      }
+      .data {
+        padding: 50px 20px;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(calc(80% / 3), 1fr));
+        gap: 40px;
+        align-items: center;
+        border-left: 1px solid #8b8b8b;
+        @media (max-width: 768px) {
+          width: 100%;
+          grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+        .reservation {
+          padding-top: 10px;
+          text-align: center;
+          span {
+            display: block;
+            margin-bottom: 6px;
+            color: #003d2d;
+          }
+          .Reserved {
+            border: 1px solid #90ee90;
+            display: inline-block;
+            padding: 8px;
+          }
+        }
+        .teamOne,
+        .teamTwo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 69px;
+            height: 105px;
+            display: inline-block;
+            margin: 0 8px;
+          }
+          h3 {
+            margin: 0;
+            color: #003d2d;
+          }
+          .dash {
+            width: 40px;
+            height: 6px;
+            background-color: #003d2d;
+          }
+          &.teamOne {
+            img {
+              transform: rotateY(166deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}

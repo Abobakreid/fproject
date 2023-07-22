@@ -1,0 +1,58 @@
+.playerhome {
+  position: relative;
+  .create_join {
+    margin-top: 80px;
+    position: relative;
+    z-index: 11;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    .container {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+      padding: 30px 0;
+      @media (max-width: 991px) {
+        width: 90%;
+      }
+    }
+    a {
+      width: 230px;
+      display: block;
+      text-align: center;
+      color: #003d2d;
+      padding: 50px 0;
+      padding: 50px 0;
+      background-color: #ffffff;
+      opacity: 1;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      span {
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 50px;
+        color: #003d2d;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+      }
+      @media (max-width: 991px) {
+        width: 300px;
+      }
+    }
+  }
+  .playerhome_img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+    height: 300px;
+    z-index: 5;
+  }
+}

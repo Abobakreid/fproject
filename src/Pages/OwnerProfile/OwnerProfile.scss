@@ -1,0 +1,113 @@
+.ownerprofile {
+  .ownerprofile_img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+    height: 300px;
+    z-index: 5;
+  }
+  .l_form {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    padding: 30px 0;
+    display: flex;
+    position: relative;
+    z-index: 99;
+    form {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 100%;
+      .form_in {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 0 10px 0 #00000029;
+        padding: 15px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .all_input_e {
+          h2 {
+            margin: 0;
+            margin-bottom: 15px;
+          }
+        }
+        .input {
+          width: 100%;
+          label {
+            display: inline-block;
+            margin-bottom: 6px;
+            color: #003d2d;
+            font-weight: 500;
+          }
+          input,
+          select {
+            width: 100%;
+            display: block;
+            padding: 10px 8px;
+            border: none;
+            margin-bottom: 10px;
+            outline: none;
+            font-size: 16px;
+            background-color: rgba(112, 112, 112, 0.05);
+            color: #003d2d;
+            &::placeholder {
+              color: #003d2d;
+            }
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+          }
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+        }
+        .form_link {
+          text-align: right;
+          a {
+            display: inline-block;
+            color: #30da7d;
+          }
+        }
+      }
+      .form_btn {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 80px;
+        button,
+        span {
+          color: #30da7d;
+          padding: 10px 25px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: all 0.4s ease-in-out;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          margin-left: 10px;
+          -webkit-transition: all 0.4s ease-in-out;
+          -moz-transition: all 0.4s ease-in-out;
+          -ms-transition: all 0.4s ease-in-out;
+          -o-transition: all 0.4s ease-in-out;
+          &:hover {
+            background-color: #003d2d;
+            color: white;
+          }
+        }
+        button {
+          border: none;
+          outline: none;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.c_or_sign {
+  overflow: hidden;
+  .sign_re {
+    margin-top: 80px;
+    .container {
+      padding: 50px 0;
+      @media (max-width: 768px) {
+        padding: 0;
+      }
+    }
+    .c_row {
+      padding: 50px 30px;
+      background-color: #f0efef;
+      color: #003d2d;
+      @media (min-width: 769px) and (max-width: 991px) {
+        display: flex;
+        justify-content: center;
+      }
+      .h_account {
+        width: 60%;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+      .h_sign {
+        width: 350px;
+        background-color: #9ce1b2;
+        border: 1px solid #707070;
+        padding: 50px 30px;
+        padding-bottom: 20px;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+        .s_btn {
+          width: 433px;
+          border: 1px solid #707070;
+          background-color: white;
+          display: flex;
+          position: relative;
+          left: -70px;
+          padding: 10px;
+          justify-content: center;
+          gap: 55px;
+          border-radius: 20px;
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+          @media (max-width: 768px) {
+            width: 100%;
+            left: 0;
+          }
+          .a_btn {
+            display: inline-block;
+            padding: 10px 18px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            -ms-border-radius: 20px;
+            -o-border-radius: 20px;
+            &.one {
+              background-color: #003d2d;
+              color: white;
+            }
+            &.two {
+              background-color: #9ce1b2;
+              color: #003d2d;
+            }
+          }
+        }
+        .h_log {
+          text-align: center;
+          span {
+            display: block;
+            text-align: center;
+            margin: 10px 0;
+          }
+          .Log_btn {
+            display: inline-block;
+            padding: 8px 40px;
+            background-color: #003d2d;
+            color: white;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+          }
+        }
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+      }
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "./friendscode.css";
+@import "./Components/index.scss";
+@import "./Pages/index.scss";
+@import "~leaflet/dist/leaflet.css";
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  .leaflet-control-attribution {
+    display: none !important;
+  }
+  .leaflet-top.leaflet-left {
+    bottom: 40px !important;
+    right: 10px !important;
+    left: auto;
+    top: auto;
+  }
+}

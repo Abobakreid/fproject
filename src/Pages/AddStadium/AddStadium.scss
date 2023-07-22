@@ -1,0 +1,302 @@
+@import url("~leaflet/dist/leaflet.css");
+.addstadium {
+  position: relative;
+  background-color: white;
+  .addstadium_img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    object-fit: cover;
+    height: 300px;
+    z-index: 5;
+  }
+  .l_form {
+    margin-top: 80px;
+    min-height: calc(100vh - 80px);
+    padding: 50px 0;
+    position: relative;
+    z-index: 99;
+    form {
+      width: 100%;
+      .row {
+        .addstadium_data {
+          width: 45%;
+          box-shadow: 0 0 20px 0 #eee;
+          background-color: white;
+          padding: 20px 30px;
+          @media (max-width: 991px) {
+            padding: 20px 15px;
+            width: 100%;
+          }
+          .addstadium_h_img {
+            width: 55px;
+            height: 55px;
+            display: inline-block;
+            & + h3 {
+              margin: 5px;
+            }
+          }
+          .stad_data {
+            margin: 16px 0;
+          }
+          .input_dat {
+            margin: 10px 0;
+            display: flex;
+            padding: 10px;
+            padding-left: 40px;
+            align-items: center;
+            background-color: rgba(112, 112, 112, 0.05);
+            .r_input {
+              width: 100%;
+              display: inline-block;
+              background-color: transparent;
+              outline: none;
+              border: none;
+              font-weight: bold;
+              font-size: 15px;
+            }
+          }
+          .input_dat,
+          .input {
+            position: relative;
+            .input_dat_icon {
+              position: absolute;
+              left: 5px;
+              display: inline-block;
+              width: 22px;
+              height: 22px;
+              overflow: hidden;
+              img {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+          .stad_time {
+            margin: 25px 0;
+            .input {
+              display: flex;
+              align-items: center;
+              @media (max-width: 991px) {
+                margin-bottom: 10px;
+              }
+            }
+            .s_input {
+              width: 150px;
+              padding: 8px 30px;
+              text-align: center;
+              border: none;
+            }
+            .time_sys {
+              display: flex;
+              gap: 0 15px;
+              span {
+                display: inline-block;
+                color: #30da7d;
+              }
+            }
+          }
+          .input_dat_last {
+            margin: 25px 0;
+          }
+          .addstadium_back {
+            padding: 30px 0;
+            a {
+              color: #30da7d;
+            }
+          }
+        }
+        .addstadium_map {
+          width: 40%;
+          background-color: white;
+          @media (max-width: 991px) {
+            width: 100%;
+          }
+          .addstadium_radio {
+            width: 100%;
+            background-color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px 50px;
+            .input_check {
+              width: 32%;
+              border: 1px solid #5fd18f;
+              display: flex;
+              padding: 0 10px;
+              justify-content: space-between;
+              align-items: center;
+              border-radius: 8px;
+              -webkit-border-radius: 8px;
+              -moz-border-radius: 8px;
+              -ms-border-radius: 8px;
+              -o-border-radius: 8px;
+              input {
+                accent-color: white;
+              }
+              &.input_check_two {
+                width: 34%;
+              }
+              div {
+                border-left: 1px solid #5fd18f;
+                padding: 5px 0;
+              }
+            }
+          }
+          .addstad_danger {
+            display: flex;
+            justify-content: center;
+            img {
+              display: inline-block;
+              width: 40px;
+              height: 40px;
+            }
+            p {
+              font: normal normal normal 14px/19px Gadugi;
+            }
+          }
+          .form_btn {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            padding-bottom: 20px;
+            padding-right: 20px;
+            button {
+              padding: 10px 25px;
+              color: #90ee90;
+              background-color: transparent;
+              border-radius: 10px;
+              border: none;
+              cursor: pointer;
+              -webkit-border-radius: 10px;
+              -moz-border-radius: 10px;
+              -ms-border-radius: 10px;
+              -o-border-radius: 10px;
+              &:not(.cancel) {
+                border: 1px solid #90ee90;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mapContainer {
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      * > {
+        width: 100%;
+        height: 100%;
+      }
+      @media (max-width: 991px) {
+        width: 100%;
+        height: 420px;
+      }
+      border-radius: 22px;
+      -webkit-border-radius: 22px;
+      -moz-border-radius: 22px;
+      -ms-border-radius: 22px;
+      -o-border-radius: 22px;
+    }
+    // form {
+    //   width: 48%;
+    //   h3 {
+    //     margin: 0;
+    //     margin-bottom: 20px;
+    //   }
+    //   .form_in,
+    //   .form_name {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     flex-wrap: wrap;
+    //     align-items: center;
+    //     gap: 10%;
+
+    //     .input {
+    //       width: 45%;
+    //       label {
+    //         display: inline-block;
+    //         margin-bottom: 6px;
+    //         color: rgb(56, 215, 72);
+    //       }
+    //       input {
+    //         width: 100%;
+    //         display: block;
+    //         padding: 10px 8px;
+    //         border: 1px solid rgb(56, 215, 72);
+    //         margin-bottom: 10px;
+    //         background: none;
+    //         outline: none;
+    //         font-size: 16px;
+    //         color: white;
+    //         border-radius: 10px;
+    //         -webkit-border-radius: 10px;
+    //         -moz-border-radius: 10px;
+    //         -ms-border-radius: 10px;
+    //         -o-border-radius: 10px;
+    //       }
+    //       @media (max-width: 991px) {
+    //         width: 100%;
+    //       }
+    //     }
+    //   }
+    //   .form_name {
+    //     width: 100%;
+    //     .input {
+    //       width: 100%;
+    //     }
+    //   }
+    //   .form_btn {
+    //     display: flex;
+    //     justify-content: flex-end;
+    //     margin-top: 20px;
+    //     gap: 10px;
+    //     button {
+    //       border: 1px solid #90ee90;
+    //       padding: 10px 25px;
+    //       background-color: #003d2d;
+    //       color: #90ee90;
+    //       border-radius: 10px;
+    //       cursor: pointer;
+    //       -webkit-border-radius: 10px;
+    //       -moz-border-radius: 10px;
+    //       -ms-border-radius: 10px;
+    //       -o-border-radius: 10px;
+    //       &.cancel {
+    //         border: 1px solid #90ee90;
+    //         background-color: transparent;
+    //         color: #90ee90;
+    //       }
+    //     }
+    //   }
+    //   .r_check {
+    //     width: 20px !important;
+    //     height: 20px;
+    //     margin-right: 5px;
+    //     border: none;
+    //     outline: none;
+    //     accent-color: white;
+    //     @media (max-width: 991px) {
+    //       margin-top: 12px;
+    //     }
+    //   }
+    //   .input_check {
+    //     display: flex;
+    //     padding-top: 15px;
+    //   }
+    //   @media (max-width: 991px) {
+    //     width: 100%;
+    //     margin-top: 40px;
+    //   }
+    // }
+  }
+  .error {
+    font-size: 14px;
+    color: red;
+  }
+}

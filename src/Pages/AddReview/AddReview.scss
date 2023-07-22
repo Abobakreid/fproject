@@ -1,0 +1,65 @@
+.add_review {
+  .container_rev {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 50px;
+  }
+  .hed {
+    text-align: center;
+    margin-top: 100px;
+  }
+  .card {
+    background-color: white;
+    padding: 15px;
+    width: 240px;
+    text-align: center;
+    h3 {
+      color: #53bc7d;
+      font: normal normal normal 22px/28px Noize Sport Free Vertion;
+    }
+    img {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    .star-rating {
+      border-top: 1px solid #5005;
+      padding: 5px 0;
+    }
+  }
+  form {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    button {
+      cursor: pointer;
+      width: 200px;
+      display: inline-block;
+      outline: none;
+      margin-top: 8px;
+      border: none;
+      padding: 10px;
+      border: 1px solid #003d2d;
+      &:hover {
+        background-color: #003d2d;
+        color: white;
+      }
+      background-color: white;
+      transition: all 0.5s ease-in-out;
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -ms-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+    }
+  }
+}
